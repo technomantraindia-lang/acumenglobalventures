@@ -254,31 +254,60 @@ function initNewsletter() {
    FAQ Accordion Handler
    -------------------------------------------------------------------------- */
 function initFaqAccordion() {
-  const faqItems = document.querySelectorAll('.visas-faq-item');
+  const faqItems = document.querySelectorAll('.visas-faq-item, .contact-faq-item');
   if (!faqItems.length) return;
 
   faqItems.forEach(item => {
-    const questionBtn = item.querySelector('.visas-faq-question');
+    const questionBtn = item.querySelector('.visas-faq-question, .contact-faq-question');
     if (!questionBtn) return;
 
     questionBtn.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
+      const parentContainer = item.closest('.visas-faq-accordion, .contact-faq-accordion');
       
-      // Close other items
-      faqItems.forEach(otherItem => {
-        if (otherItem !== item) {
-          otherItem.classList.remove('active');
-        }
-      });
+      // Close other items in the same container
+      if (parentContainer) {
+        parentContainer.querySelectorAll('.visas-faq-item, .contact-faq-item').forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            const btn = otherItem.querySelector('.visas-faq-question, .contact-faq-question');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
 
       // Toggle current item
       if (isActive) {
         item.classList.remove('active');
+        questionBtn.setAttribute('aria-expanded', 'false');
       } else {
         item.classList.add('active');
+        questionBtn.setAttribute('aria-expanded', 'true');
       }
     });
   });
+
+  // Handle Contact Enquiry Form
+  const contactForm = document.getElementById('contactEnquiryForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('.btn-contact-submit');
+      if (submitBtn) {
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Sending enquiry...</span>';
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          alert('Thank you for reaching out to Acumen Global Ventures. Your inquiry has been received and our senior advisory team will contact you within one business day.');
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          contactForm.reset();
+        }, 800);
+      }
+    });
+  }
 }
+
 
 

@@ -3993,7 +3993,9 @@ p {
   background-color: #1746D2;
   position: relative;
   overflow: hidden;
-  padding: 4.25rem 0;
+  padding: 3.25rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .contact-cta-container {
@@ -4004,6 +4006,7 @@ p {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 clamp(1.5rem, 4.5vw, 5.5rem);
+  width: 100%;
 }
 
 .contact-cta-content {
@@ -4019,7 +4022,7 @@ p {
   line-height: 1.15;
   color: #FFFFFF;
   letter-spacing: -0.025em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
 }
 
 .contact-cta-subtitle {
@@ -4028,12 +4031,12 @@ p {
   font-weight: 400;
 }
 
-.contact-cta-vector-wrap {
+.contact-cta-arcs-wrap {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 450px;
+  width: 480px;
   height: 100%;
   pointer-events: none;
   z-index: 1;
@@ -4042,7 +4045,7 @@ p {
 .contact-cta-svg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: block;
 }
 
 /* Responsive Media Queries for Contact Page */
@@ -4066,7 +4069,7 @@ p {
   .contact-left-col {
     padding-right: 0;
   }
-  .contact-cta-vector-wrap {
+  .contact-cta-arcs-wrap {
     opacity: 0.35;
   }
 }

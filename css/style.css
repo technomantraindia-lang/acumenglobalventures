@@ -1420,11 +1420,10 @@ p {
 
 .cta-banner-arcs {
   position: absolute;
-  top: 0;
-  left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
-  width: 100%;
+  width: clamp(520px, 48vw, 850px);
   height: 100%;
   pointer-events: none;
   z-index: 1;
@@ -3908,18 +3907,18 @@ p {
 
 /* FAQ Section */
 .contact-faq-section {
-  padding: 4.5rem 0 5.5rem;
+  padding: clamp(4.5rem, 6vw, 6.5rem) 0;
   border-top: 1px solid #E2E8F0;
   background-color: #FFFFFF;
 }
 
 .contact-faq-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .contact-faq-title {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-size: clamp(2.2rem, 3.4vw, 2.9rem);
   font-weight: 800;
   color: #0F172A;
   letter-spacing: -0.025em;
@@ -3943,13 +3942,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.4rem 0;
+  padding: 1.5rem 0;
   background: none;
   border: none;
   text-align: left;
   cursor: pointer;
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   font-weight: 700;
   color: #0F172A;
   transition: color 0.2s ease;
@@ -3979,13 +3978,13 @@ p {
 
 .contact-faq-item.active .contact-faq-answer {
   max-height: 300px;
-  padding-bottom: 1.4rem;
+  padding-bottom: 1.5rem;
 }
 
 .contact-faq-answer p {
-  font-size: 1rem;
+  font-size: 1.02rem;
   color: #475569;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 /* Blue CTA Banner */
@@ -3993,9 +3992,10 @@ p {
   background-color: #1746D2;
   position: relative;
   overflow: hidden;
-  padding: 3.25rem 0;
+  padding: clamp(4.5rem, 6vw, 6.25rem) 0;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .contact-cta-container {
@@ -4007,28 +4007,31 @@ p {
   margin: 0 auto;
   padding: 0 clamp(1.5rem, 4.5vw, 5.5rem);
   width: 100%;
+  z-index: 2;
 }
 
 .contact-cta-content {
   position: relative;
-  z-index: 2;
-  max-width: 620px;
+  z-index: 3;
+  max-width: 650px;
 }
 
 .contact-cta-title {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-size: clamp(2.4rem, 3.8vw, 3.25rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.12;
   color: #FFFFFF;
-  letter-spacing: -0.025em;
-  margin-bottom: 0.65rem;
+  letter-spacing: -0.028em;
+  margin-bottom: 0.85rem;
 }
 
 .contact-cta-subtitle {
-  font-size: 1.15rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 1.35vw, 1.25rem);
   color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .contact-cta-arcs-wrap {
@@ -4036,10 +4039,11 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 480px;
+  width: clamp(520px, 48vw, 850px);
   height: 100%;
   pointer-events: none;
   z-index: 1;
+  overflow: hidden;
 }
 
 .contact-cta-svg {

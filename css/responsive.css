@@ -1,0 +1,373 @@
+/* ==========================================================================
+   ACUMEN GLOBAL - Responsive Breakpoints & Mobile Optimization
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .hero-exact-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-left-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons-row,
+  .pathways-title-line,
+  .pathways-country-list {
+    justify-content: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group,
+  .hero-trust-indicators {
+    justify-content: center;
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .perspective-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .perspective-right {
+    padding-top: 0;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu,
+  .top-bar {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .pathway-row,
+  .pathway-row-reverse {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .pathway-row-reverse .pathway-visual {
+    order: 2;
+  }
+
+  .pathway-row-reverse .pathway-content {
+    order: 1;
+  }
+
+  .possibilities-header-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .possibilities-subtext {
+    text-align: left;
+  }
+
+  .landmarks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .landmark-divider {
+    display: none;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .resources-right {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 3rem;
+  }
+
+  .cta-banner-arcs {
+    opacity: 0.35;
+  }
+
+  .footer-exact-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-exact-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-bar-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quick-eligibility-bar {
+    margin-top: 0;
+  }
+
+  .quiz-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero-main {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .services-grid,
+  .destinations-grid,
+  .posts-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-bar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-badge {
+    position: static;
+    margin-top: 1rem;
+    width: 100%;
+    animation: none;
+  }
+
+  .hero-visual-wrap {
+    flex-direction: column;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .pillar-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-form-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .eligibility-box {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landmarks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .callout-badge {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.72rem;
+  }
+
+  .badge-pointer.top-pointer {
+    bottom: -16px;
+    right: -18px;
+  }
+
+  .badge-pointer.right-pointer {
+    left: -20px;
+    width: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About Page Media Queries */
+@media (max-width: 991px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-hero-right {
+    justify-content: center;
+  }
+
+  .about-hero-visual-img {
+    max-width: 100%;
+  }
+
+  .about-perspective-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-perspective-right {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 2rem;
+  }
+
+  .about-foundation-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-guides-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-audience-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-audience-card {
+    padding: 0;
+  }
+
+  .about-audience-card:not(:first-child) {
+    border-left: none;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 2rem;
+  }
+
+  .about-process-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-process-right {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .foundation-card {
+    gap: 1.25rem;
+  }
+
+  .about-guides-title,
+  .about-foundation-title,
+  .about-audience-title,
+  .about-process-title {
+    font-size: 2.2rem;
+  }
+}

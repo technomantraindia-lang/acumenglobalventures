@@ -612,53 +612,21 @@ p {
   animation: swooshAmbientGlow 6s ease-in-out infinite alternate;
 }
 
-/* Continuous Traveling Laser Beam along Golden Swoosh */
-.swoosh-laser-beam {
-  stroke-dasharray: 100 450;
-  animation: laserTravelSwoosh 3.8s linear infinite;
-  filter: drop-shadow(0 0 6px rgba(244, 196, 48, 0.95));
-}
-
-@keyframes laserTravelSwoosh {
-  0% {
-    stroke-dashoffset: 550;
-  }
-  100% {
-    stroke-dashoffset: -550;
-  }
-}
-
 .swoosh-marker {
-  animation: markerShimmer 2.5s ease-in-out infinite alternate;
-}
-
-@keyframes markerShimmer {
-  0% { filter: drop-shadow(0 0 2px rgba(212, 175, 55, 0.4)); transform: scale(1); }
-  100% { filter: drop-shadow(0 0 8px rgba(212, 175, 55, 1)); transform: scale(1.08); }
-}
-
-@keyframes swooshAmbientGlow {
-  0% { opacity: 0.85; filter: drop-shadow(0 0 0px rgba(212, 175, 55, 0)); }
-  100% { opacity: 1; filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.45)); }
+  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.6));
 }
 
 .hero-visual-globe-img {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.14));
-  animation: heroGlobeBreath 7s ease-in-out infinite;
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.12));
   transform-origin: center;
-  transition: filter 0.4s ease;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .hero-globe-wrapper:hover .hero-visual-globe-img {
-  filter: drop-shadow(0 36px 70px rgba(23, 70, 210, 0.22));
-}
-
-@keyframes heroGlobeBreath {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-8px) scale(1.01); }
+  filter: drop-shadow(0 24px 50px rgba(23, 70, 210, 0.16));
 }
 
 @keyframes heroFadeSlideUp {
@@ -720,12 +688,6 @@ p {
 .callout-badge.top-talent {
   top: 14%;
   left: 9%;
-  animation: floatTopTalent 5.5s ease-in-out infinite;
-}
-
-@keyframes floatTopTalent {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(0.5deg); }
 }
 
 .badge-line-svg {
@@ -744,13 +706,6 @@ p {
 .callout-badge.right-business {
   top: 51%;
   right: 5%;
-  animation: floatRightBusiness 6.5s ease-in-out infinite;
-  animation-delay: 1.2s;
-}
-
-@keyframes floatRightBusiness {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(8px) rotate(-0.5deg); }
 }
 
 .badge-line-svg.right-line {
@@ -761,23 +716,8 @@ p {
   height: 20px;
 }
 
-/* Radar pulse on badge connector dots */
 .badge-line-svg circle {
-  animation: pulseConnectorDot 2.2s ease-in-out infinite;
-  transform-origin: center;
-}
-
-@keyframes pulseConnectorDot {
-  0%, 100% {
-    r: 4;
-    fill: #1746D2;
-    filter: drop-shadow(0 0 0px rgba(23, 70, 210, 0));
-  }
-  50% {
-    r: 6;
-    fill: #2563EB;
-    filter: drop-shadow(0 0 10px rgba(37, 99, 235, 1));
-  }
+  fill: #1746D2;
 }
 
 /* ==========================================================================
@@ -900,35 +840,6 @@ p {
   width: 100%;
   height: 100%;
   display: block;
-  animation: orbitArcsFloat 8s ease-in-out infinite alternate;
-}
-
-@keyframes orbitArcsFloat {
-  0% { transform: translateY(0px) scaleY(1); opacity: 0.9; }
-  100% { transform: translateY(-4px) scaleY(1.02); opacity: 1; }
-}
-
-/* Animated Traveling Laser Comets along Perspective Arcs */
-.arc-laser.green-laser {
-  stroke-dasharray: 120 500;
-  animation: laserTravelGreen 4.8s linear infinite;
-  filter: drop-shadow(0 0 8px rgba(0, 168, 107, 0.9));
-}
-
-@keyframes laserTravelGreen {
-  0% { stroke-dashoffset: 620; }
-  100% { stroke-dashoffset: -620; }
-}
-
-.arc-laser.blue-laser {
-  stroke-dasharray: 180 800;
-  animation: laserTravelBlue 5.5s linear infinite;
-  filter: drop-shadow(0 0 10px rgba(23, 70, 210, 0.9));
-}
-
-@keyframes laserTravelBlue {
-  0% { stroke-dashoffset: 980; }
-  100% { stroke-dashoffset: -980; }
 }
 
 /* ==========================================================================
@@ -1410,17 +1321,9 @@ p {
 
 .connector-line {
   height: 2px;
-  background: linear-gradient(90deg, #1746D2 0%, #3D6CF0 35%, #00A86B 70%, #1746D2 100%);
-  background-size: 250% 100%;
-  animation: energyFlowBeam 3.5s linear infinite;
+  background: linear-gradient(90deg, #1746D2 0%, #00A86B 100%);
   width: 100%;
   border-radius: 2px;
-  box-shadow: 0 0 8px rgba(23, 70, 210, 0.35);
-}
-
-@keyframes energyFlowBeam {
-  0% { background-position: 100% 0; }
-  100% { background-position: -100% 0; }
 }
 
 .connector-dot {
@@ -1432,31 +1335,12 @@ p {
   margin-left: -6px;
   flex-shrink: 0;
   position: relative;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
-  box-shadow: 0 0 10px rgba(23, 70, 210, 0.4);
-}
-
-.connector-dot::after {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  border-radius: 50%;
-  background: rgba(23, 70, 210, 0.3);
-  animation: stepDotPulse 2.2s infinite cubic-bezier(0.16, 1, 0.3, 1);
-  pointer-events: none;
-}
-
-@keyframes stepDotPulse {
-  0% { transform: scale(0.7); opacity: 0.95; }
-  100% { transform: scale(2.6); opacity: 0; }
+  transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
 .step-card:hover .connector-dot {
   background: #1746D2;
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .step-title {
@@ -1755,82 +1639,20 @@ p {
   display: block;
 }
 
-.cta-laser-gold {
-  stroke-dasharray: 120 500;
-  animation: laserTravelCtaGold 4.2s linear infinite;
-  filter: drop-shadow(0 0 10px rgba(245, 166, 35, 0.95));
-}
-
-@keyframes laserTravelCtaGold {
-  0% { stroke-dashoffset: 620; }
-  100% { stroke-dashoffset: -620; }
-}
-
-.cta-laser-green {
-  stroke-dasharray: 90 400;
-  animation: laserTravelCtaGreen 3.8s linear infinite;
-  filter: drop-shadow(0 0 10px rgba(0, 168, 107, 0.95));
-}
-
-@keyframes laserTravelCtaGreen {
-  0% { stroke-dashoffset: 490; }
-  100% { stroke-dashoffset: -490; }
-}
-
-/* Multi-tier Sonar Waves around Golden Node */
-.sonar-ring-outer {
-  animation: sonarWaveExpand 3.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
-  transform-origin: 150px 185px;
-}
-
-.sonar-ring-mid {
-  animation: sonarWaveExpand 3.2s cubic-bezier(0.16, 1, 0.3, 1) infinite 0.8s;
-  transform-origin: 150px 185px;
-}
-
-.sonar-node-core {
-  animation: sonarCoreGlow 2.4s ease-in-out infinite;
-  transform-origin: 150px 185px;
-}
-
-@keyframes sonarWaveExpand {
-  0% { transform: scale(0.6); opacity: 0.95; stroke-width: 2.5px; }
-  100% { transform: scale(3.2); opacity: 0; stroke-width: 0.5px; }
-}
-
-@keyframes sonarCoreGlow {
-  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(245, 166, 35, 0.5)); }
-  50% { transform: scale(1.18); filter: drop-shadow(0 0 16px rgba(245, 166, 35, 1)); }
-}
-
-/* 3D Card Tilt Physics & Dynamic Specular Glare */
+/* Subtle, elegant card hover transitions */
 .landmark-card,
 .step-card,
 .resource-article-card,
 .pathway-image-box {
-  transform-style: preserve-3d;
-  perspective: 1000px;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.card-specular-glare {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  border-radius: inherit;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  z-index: 10;
-  mix-blend-mode: overlay;
-}
-
-.landmark-card:hover .card-specular-glare,
-.step-card:hover .card-specular-glare,
-.resource-article-card:hover .card-specular-glare {
-  opacity: 1;
+.landmark-card:hover,
+.step-card:hover,
+.resource-article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 /* ==========================================================================

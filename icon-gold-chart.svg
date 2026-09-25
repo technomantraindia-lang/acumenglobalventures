@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="#C59B27" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Ascending Bar Chart Columns -->
+  <!-- Bar 1 (Shortest) -->
+  <rect x="12" y="32" width="10" height="20" rx="1"/>
+  <!-- Bar 2 (Medium) -->
+  <rect x="25" y="22" width="10" height="30" rx="1"/>
+  <!-- Bar 3 (Tallest) -->
+  <rect x="38" y="10" width="10" height="42" rx="1"/>
+  <!-- Base Ground Line -->
+  <line x1="8" y1="52" x2="52" y2="52" stroke-width="2.5"/>
+</svg>

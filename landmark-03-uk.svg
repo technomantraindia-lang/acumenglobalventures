@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" fill="none" stroke="#C59B27" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Top Spire Point -->
+  <line x1="50" y1="8" x2="50" y2="20" stroke-width="2.2"/>
+  <!-- Lantern / Spire Roof -->
+  <polygon points="50,20 40,42 60,42"/>
+  <line x1="44" y1="32" x2="56" y2="32"/>
+  <rect x="42" y="42" width="16" height="10"/>
+  <line x1="45" y1="42" x2="45" y2="52"/>
+  <line x1="55" y1="42" x2="55" y2="52"/>
+
+  <!-- Clock Face Cube Housing -->
+  <rect x="34" y="52" width="32" height="34" rx="1"/>
+  <!-- Clock Face Circle -->
+  <circle cx="50" cy="69" r="11"/>
+  <!-- Clock Hands pointing 3:00 / 12:15 -->
+  <line x1="50" y1="69" x2="50" y2="62" stroke-width="2"/>
+  <line x1="50" y1="69" x2="56" y2="69" stroke-width="2"/>
+
+  <!-- Tower Body with Vertical Slits / Column Paneling -->
+  <rect x="36" y="86" width="28" height="62"/>
+  <line x1="42" y1="86" x2="42" y2="148"/>
+  <line x1="50" y1="86" x2="50" y2="148"/>
+  <line x1="58" y1="86" x2="58" y2="148"/>
+
+  <!-- Base Platform -->
+  <rect x="30" y="148" width="40" height="6" rx="1"/>
+  <line x1="22" y1="154" x2="78" y2="154" stroke-width="2.5"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" fill="none" stroke="#C59B27" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Flame & Torch -->
+  <path d="M 28 8 C 28 8, 33 2, 34 0 C 35 2, 40 8, 40 8 C 40 14, 28 14, 28 8 Z" fill="#C59B27" stroke="none" />
+  <path d="M 25 15 L 43 15 L 39 23 L 29 23 Z" fill="none"/>
+  <rect x="30" y="23" width="8" height="12" rx="1"/>
+  <!-- Raised Arm -->
+  <path d="M 34 35 L 34 62 L 44 68"/>
+  <path d="M 38 35 L 38 58 L 48 64"/>
+  <!-- Crown Spikes -->
+  <polygon points="56,38 52,24 58,35 62,20 64,34 72,21 70,36 80,27 75,39 85,36 78,43 86,47 77,47" fill="#C59B27" stroke="none"/>
+  <!-- Head & Profile -->
+  <path d="M 52 46 C 52 40, 74 40, 74 46 C 74 54, 70 60, 62 62 C 55 60, 52 54, 52 46 Z"/>
+  <path d="M 58 48 L 58 54 L 63 54"/>
+  <path d="M 56 57 L 64 57"/>
+  <!-- Robe & Body -->
+  <path d="M 44 68 L 36 135 L 76 135 L 72 65"/>
+  <!-- Tablet -->
+  <polygon points="70,72 84,68 88,88 74,92"/>
+  <path d="M 74 74 L 82 72"/>
+  <path d="M 75 78 L 83 76"/>
+  <path d="M 76 82 L 84 80"/>
+  <!-- Drapes -->
+  <path d="M 44 68 C 48 85, 62 95, 74 92"/>
+  <path d="M 42 85 C 48 105, 58 115, 72 110"/>
+  <path d="M 46 100 L 48 135"/>
+  <path d="M 56 95 L 58 135"/>
+  <path d="M 64 92 L 66 135"/>
+  <!-- Base -->
+  <rect x="25" y="135" width="60" height="8" rx="1"/>
+  <rect x="18" y="143" width="74" height="8" rx="1"/>
+  <line x1="12" y1="151" x2="98" y2="151" stroke-width="2.5"/>
+</svg>

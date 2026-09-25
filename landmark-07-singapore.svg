@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 110" fill="none" stroke="#C59B27" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ArtScience Museum (Lotus Flower shape on Left) -->
+  <path d="M 12 85 C 12 70, 22 55, 34 52 C 30 68, 32 80, 36 85"/>
+  <path d="M 24 85 C 26 62, 38 48, 52 45 C 48 65, 48 78, 50 85"/>
+  <path d="M 40 85 C 44 65, 54 55, 62 58 C 58 72, 56 80, 56 85"/>
+
+  <!-- Marina Bay Sands SkyPark (Boat shape on top) -->
+  <path d="M 52 28 C 75 22, 120 22, 142 28 L 140 36 C 115 32, 75 32, 55 36 Z"/>
+  <!-- SkyPark Rooftop Pools / Pavilions -->
+  <rect x="74" y="20" width="12" height="6" rx="1"/>
+  <rect x="110" y="20" width="14" height="6" rx="1"/>
+
+  <!-- Tower 1 (Left Tower) -->
+  <path d="M 64 36 L 62 85"/>
+  <path d="M 72 36 L 70 85"/>
+  <path d="M 80 36 L 78 85"/>
+  <line x1="63" y1="52" x2="79" y2="52"/>
+  <line x1="63" y1="68" x2="79" y2="68"/>
+
+  <!-- Tower 2 (Center Tower) -->
+  <path d="M 90 36 L 90 85"/>
+  <path d="M 98 36 L 98 85"/>
+  <path d="M 106 36 L 106 85"/>
+  <line x1="90" y1="52" x2="106" y2="52"/>
+  <line x1="90" y1="68" x2="106" y2="68"/>
+
+  <!-- Tower 3 (Right Tower) -->
+  <path d="M 118 36 L 120 85"/>
+  <path d="M 126 36 L 128 85"/>
+  <path d="M 134 36 L 136 85"/>
+  <line x1="119" y1="52" x2="135" y2="52"/>
+  <line x1="119" y1="68" x2="135" y2="68"/>
+
+  <!-- Base Shoreline / Platform -->
+  <rect x="10" y="85" width="132" height="6" rx="1"/>
+  <line x1="4" y1="91" x2="146" y2="91" stroke-width="2.5"/>
+</svg>

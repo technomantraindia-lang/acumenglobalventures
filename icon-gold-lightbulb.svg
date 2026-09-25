@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="#C59B27" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Lightbulb Glass Bulb -->
+  <path d="M 30 8 C 18.95 8, 14 16.5, 14 24 C 14 30.5, 20 35, 22 38 L 22 43 L 38 43 L 38 38 C 40 35, 46 30.5, 46 24 C 46 16.5, 41.05 8, 30 8 Z"/>
+  <!-- Filament -->
+  <path d="M 26 28 L 28 20 L 32 20 L 34 28"/>
+  <!-- Base Screw Threads -->
+  <line x1="24" y1="47" x2="36" y2="47"/>
+  <line x1="26" y1="51" x2="34" y2="51"/>
+  <path d="M 28 51 C 28 53.5, 32 53.5, 32 51"/>
+</svg>

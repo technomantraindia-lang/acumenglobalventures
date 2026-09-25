@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Document Sheet with folded corner -->
+  <path d="M 22 10 L 48 10 L 62 24 L 62 70 C 62 72.2 60.2 74 58 74 L 22 74 C 19.8 74 18 72.2 18 70 L 18 14 C 18 11.8 19.8 10 22 10 Z"/>
+  <!-- Folded corner tab -->
+  <path d="M 48 10 L 48 24 L 62 24"/>
+  <!-- Content lines -->
+  <line x1="26" y1="34" x2="54" y2="34" stroke-width="2.5"/>
+  <line x1="26" y1="44" x2="54" y2="44" stroke-width="2.5"/>
+  <line x1="26" y1="54" x2="46" y2="54" stroke-width="2.5"/>
+  <line x1="26" y1="64" x2="38" y2="64" stroke-width="2.5"/>
+</svg>

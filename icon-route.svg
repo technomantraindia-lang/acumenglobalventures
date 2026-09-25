@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 80" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Start Location Pin (Bottom Left) -->
+  <path d="M 22 45 C 16 45, 12 49, 12 55 C 12 63, 22 74, 22 74 C 22 74, 32 63, 32 55 C 32 49, 28 45, 22 45 Z"/>
+  <circle cx="22" cy="54" r="3.5" fill="#D4AF37"/>
+
+  <!-- End Location Pin (Top Right) -->
+  <path d="M 68 12 C 62 12, 58 16, 58 22 C 58 30, 68 41, 68 41 C 68 41, 78 30, 78 22 C 78 16, 74 12, 68 12 Z"/>
+  <circle cx="68" cy="21" r="3.5" fill="#D4AF37"/>
+
+  <!-- Dashed Pathway connecting them -->
+  <path d="M 25 74 C 42 74, 38 48, 52 44 C 60 41, 66 36, 68 41" stroke-dasharray="4 4" stroke-width="2.2"/>
+</svg>

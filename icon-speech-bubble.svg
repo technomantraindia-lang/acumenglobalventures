@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Rounded Speech Bubble -->
+  <path d="M 30 10 C 17.85 10, 8 18.5, 8 29 C 8 35.2, 11.6 40.7, 17.2 44.2 L 14 53 L 24.5 48.3 C 26.3 48.8, 28.1 49, 30 49 C 42.15 49, 52 40.5, 52 29 C 52 18.5, 42.15 10, 30 10 Z"/>
+  <!-- Center Horizontal Dash / Line -->
+  <line x1="22" y1="29" x2="38" y2="29" stroke-width="2.5"/>
+</svg>

@@ -69,6 +69,52 @@
 }
 
 @media (max-width: 992px) {
+  .hero-exact {
+    min-height: auto;
+    padding: 2rem 0 3.5rem 0;
+  }
+
+  .hero-exact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-left-content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .hero-subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons-row {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero-pathways-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pathways-title-line {
+    justify-content: center;
+  }
+
+  .pathways-country-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-globe-wrapper {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
   .nav-menu,
   .top-bar {
     display: none;
@@ -190,6 +236,137 @@
 }
 
 @media (max-width: 768px) {
+  /* Hero Section Mobile Optimization */
+  .hero-exact {
+    padding: 1.5rem 0 3rem 0;
+    min-height: auto;
+  }
+
+  .hero-exact-grid {
+    gap: 2.25rem;
+  }
+
+  .hero-left-content {
+    max-width: 100%;
+  }
+
+  .hero-tagline-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-main-heading {
+    font-size: clamp(2.2rem, 7.5vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.15rem;
+  }
+
+  .hero-subtext {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 1.85rem;
+    max-width: 480px;
+  }
+
+  .hero-buttons-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+  }
+
+  .btn-hero-solid {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 0.95rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-hero-text-link {
+    font-size: 1rem;
+    padding: 0.35rem 0.75rem;
+    justify-content: center;
+  }
+
+  .hero-pathways-bar {
+    width: 100%;
+  }
+
+  .pathways-title-line {
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .pathways-title-line span {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  .pathways-title-line .line {
+    width: 60px;
+  }
+
+  .pathways-country-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 0.75rem;
+    font-size: 0.88rem;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .hero-globe-wrapper {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .globe-golden-swoosh {
+    top: -10%;
+    left: -10%;
+    width: 115%;
+    height: 110%;
+  }
+
+  .callout-badge {
+    padding: 0.55rem 0.85rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(10, 17, 40, 0.1);
+  }
+
+  .callout-badge .badge-text {
+    font-size: 0.78rem;
+    line-height: 1.2;
+  }
+
+  .callout-badge.top-talent {
+    top: 8%;
+    left: 2%;
+  }
+
+  .callout-badge.right-business {
+    top: 48%;
+    right: 2%;
+  }
+
+  .badge-line-svg.top-line {
+    right: -24px;
+    bottom: -18px;
+    width: 30px;
+    height: 24px;
+  }
+
+  .badge-line-svg.right-line {
+    left: -22px;
+    width: 24px;
+    height: 16px;
+  }
+
   .section {
     padding: 4rem 0;
   }
@@ -255,14 +432,77 @@
 }
 
 @media (max-width: 480px) {
-  .landmarks-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+  /* Hero Section Small Mobile */
+  .hero-exact {
+    padding: 1rem 0 2.25rem 0;
+  }
+
+  .hero-exact-grid {
+    gap: 1.75rem;
+  }
+
+  .hero-main-heading {
+    font-size: clamp(1.95rem, 8.5vw, 2.45rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-buttons-row {
+    margin-bottom: 2rem;
+    gap: 0.75rem;
+  }
+
+  .btn-hero-solid {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .pathways-title-line .line {
+    display: none;
+  }
+
+  .pathways-country-list {
+    font-size: 0.8rem;
+    gap: 0.35rem 0.6rem;
+  }
+
+  .hero-globe-wrapper {
+    max-width: 310px;
   }
 
   .callout-badge {
-    padding: 0.45rem 0.75rem;
-    font-size: 0.72rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: 6px;
+  }
+
+  .callout-badge .badge-text {
+    font-size: 0.68rem;
+  }
+
+  .callout-badge.top-talent {
+    top: 4%;
+    left: 0%;
+  }
+
+  .callout-badge.right-business {
+    top: 52%;
+    right: 0%;
+  }
+
+  .badge-line-svg {
+    display: none;
+  }
+
+  .landmarks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 
   .badge-pointer.top-pointer {
@@ -296,22 +536,45 @@
 
 /* About Page Media Queries */
 @media (max-width: 991px) {
+  /* About Hero */
+  .about-hero {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
   .about-hero-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
 
+  .about-hero-left {
+    max-width: 100%;
+  }
+
+  .about-hero-title {
+    font-size: clamp(2.6rem, 5.5vw, 3.5rem);
+  }
+
   .about-hero-right {
     justify-content: center;
+    width: 100%;
   }
 
   .about-hero-visual-img {
     max-width: 100%;
   }
 
+  /* Our Perspective */
+  .about-perspective {
+    padding: 3rem 0 3.5rem 0;
+  }
+
   .about-perspective-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .about-perspective-left {
+    max-width: 100%;
   }
 
   .about-perspective-right {
@@ -321,14 +584,36 @@
     padding-top: 2rem;
   }
 
+  /* Our Foundation */
+  .about-foundation {
+    padding: 3.5rem 0 3.5rem 0;
+  }
+
   .about-foundation-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
+  .foundation-card:nth-child(2) {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 2rem;
+  }
+
+  /* Our Values / Guides */
+  .about-guides-section {
+    padding: 3.5rem 0;
+  }
+
   .about-guides-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  /* Who We Help */
+  .about-audience-section {
+    padding: 3.5rem 0 4rem 0;
   }
 
   .about-audience-grid {
@@ -346,9 +631,23 @@
     padding-top: 2rem;
   }
 
+  /* Working with Acumen (Process) */
+  .about-process-section {
+    padding: 3.5rem 0 3rem 0;
+  }
+
   .about-process-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .about-process-left {
+    padding-bottom: 0;
+    min-height: auto;
+  }
+
+  .about-process-arcs-img {
+    display: none;
   }
 
   .about-process-right {
@@ -356,18 +655,1144 @@
     padding-left: 0;
     border-top: 1px solid #E2E8F0;
     padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  /* About Hero Mobile */
+  .about-hero {
+    padding: 1.5rem 0 2.75rem 0;
+  }
+
+  .about-hero-grid {
+    gap: 2.25rem;
+  }
+
+  .about-hero-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.85rem;
+  }
+
+  .about-hero-title {
+    font-size: clamp(2.2rem, 7.5vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-hero-desc {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .about-hero-tagline {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+  }
+
+  /* Our Perspective Mobile */
+  .about-perspective {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .about-perspective-kicker {
+    font-size: 0.78rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .about-perspective-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+  }
+
+  .about-perspective-headline {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+  }
+
+  .about-perspective-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Our Foundation Mobile */
+  .about-foundation {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .about-foundation-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-foundation-kicker {
+    font-size: 0.78rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-foundation-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+  }
+
+  .about-foundation-arcs {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    opacity: 0.25;
+  }
+
+  .about-foundation-grid {
+    gap: 1.75rem;
+  }
+
   .foundation-card {
     gap: 1.25rem;
   }
 
-  .about-guides-title,
+  .foundation-card:nth-child(2) {
+    padding-top: 1.75rem;
+  }
+
+  .foundation-num {
+    font-size: 2.75rem;
+  }
+
+  .foundation-subhead {
+    font-size: 0.72rem;
+  }
+
+  .foundation-desc {
+    font-size: 1.02rem;
+    line-height: 1.5;
+  }
+
+  /* Values / What Guides Us Mobile */
+  .about-guides-section {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .about-guides-grid {
+    gap: 2.25rem;
+  }
+
+  .about-guides-kicker {
+    font-size: 0.78rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .about-guides-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-guide-item {
+    gap: 1.25rem;
+    padding: 1.25rem 0;
+  }
+
+  .about-guide-icon-box {
+    width: 32px;
+    height: 32px;
+  }
+
+  .about-guide-icon-box svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .about-guide-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .about-guide-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Who We Help Mobile */
+  .about-audience-section {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .about-audience-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-audience-kicker {
+    font-size: 0.78rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-audience-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+  }
+
+  .about-audience-grid {
+    gap: 1.5rem;
+  }
+
+  .about-audience-card {
+    gap: 1.25rem;
+  }
+
+  .about-audience-card:not(:first-child) {
+    padding-top: 1.5rem;
+  }
+
+  .about-audience-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .about-audience-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-audience-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .about-audience-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Working with Acumen Mobile */
+  .about-process-section {
+    padding: 2.5rem 0 2rem 0;
+  }
+
+  .about-process-grid {
+    gap: 2rem;
+  }
+
+  .about-process-kicker {
+    font-size: 0.78rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .about-process-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-process-right {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .about-process-step {
+    gap: 1.25rem;
+    padding: 1.25rem 0;
+  }
+
+  .about-step-num {
+    font-size: 2.4rem;
+  }
+
+  .about-step-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .about-step-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .about-hero-title {
+    font-size: clamp(1.95rem, 8.5vw, 2.45rem);
+    line-height: 1.15;
+  }
+
+  .about-hero-desc {
+    font-size: 0.98rem;
+  }
+
+  .about-perspective-title,
   .about-foundation-title,
+  .about-guides-title,
   .about-audience-title,
   .about-process-title {
-    font-size: 2.2rem;
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
+  }
+
+  .foundation-num {
+    font-size: 2.4rem;
+  }
+
+  .about-step-num {
+    font-size: 2.1rem;
+  }
+}
+
+/* ==========================================================================
+   VISAS & IMMIGRATION PAGE - COMPLETE MOBILE & TABLET OPTIMIZATION
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* Visas Hero */
+  .visas-hero {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .visas-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .visas-hero-content {
+    max-width: 100%;
+  }
+
+  .visas-hero-title {
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+  }
+
+  .visas-hero-title .hero-line {
+    white-space: normal;
+  }
+
+  .visas-hero-visual-wrap {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .visas-hero-img {
+    max-width: 100%;
+  }
+
+  /* 2x2 Services Grid (USA & Global) */
+  .visas-usa-section,
+  .visas-global-section {
+    padding: 3.5rem 0 4rem 0;
+  }
+
+  .visas-usa-heading,
+  .visas-global-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .visas-grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-service-card {
+    padding: 2rem 0;
+    border-right: none !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    width: 100%;
+  }
+
+  .visa-card-c2r2 {
+    border-bottom: none !important;
+  }
+
+  .visas-pathway-card {
+    padding: 2rem 0;
+    border-right: none !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    width: 100%;
+  }
+
+  .visas-pathway-card:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Specialist Support */
+  .visas-support-section {
+    padding: 3.5rem 0 4.5rem 0;
+  }
+
+  .visas-support-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Next Step */
+  .visas-nextstep-section {
+    padding: 3.5rem 0 4rem 0;
+  }
+
+  .visas-nextstep-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .visas-nextstep-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .visas-nextstep-img-wrap {
+    max-width: 100%;
+  }
+
+  .visas-nextstep-steps {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 2rem;
+  }
+
+  /* FAQ */
+  .visas-faq-section {
+    padding: 3.5rem 0 4.5rem 0;
+  }
+
+  .visas-faq-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  /* CTA Banner */
+  .visas-cta-banner {
+    padding: 4.5rem 0;
+  }
+
+  .visas-cta-visual {
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Visas Hero Mobile */
+  .visas-hero {
+    padding: 1.5rem 0 2.75rem 0;
+  }
+
+  .visas-hero-grid {
+    gap: 2.25rem;
+  }
+
+  .visas-hero-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.85rem;
+  }
+
+  .visas-hero-title {
+    font-size: clamp(2.2rem, 7.5vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.25rem;
+  }
+
+  .visas-hero-title .hero-line {
+    white-space: normal;
+  }
+
+  .visas-hero-desc {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .btn-visas-hero {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 0.95rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Section Header Bars */
+  .visas-section-header {
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .visas-section-tag {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+
+  .visas-section-header-sub {
+    display: none;
+  }
+
+  /* Section Headings */
+  .visas-usa-heading,
+  .visas-global-heading,
+  .visas-support-heading,
+  .visas-nextstep-heading,
+  .visas-faq-heading {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+    margin-bottom: 2rem;
+  }
+
+  /* USA Services Cards */
+  .visas-usa-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .visa-service-card {
+    padding: 1.5rem 0;
+  }
+
+  .visa-card-num {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .visa-card-title {
+    font-size: clamp(1.4rem, 5vw, 1.75rem);
+    margin-bottom: 0.85rem;
+  }
+
+  .visa-card-link {
+    font-size: 0.95rem;
+  }
+
+  /* Global Pathways Cards */
+  .visas-global-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .visas-pathway-card {
+    padding: 1.5rem 0;
+  }
+
+  .visas-pathway-card-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .visas-landmark-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .visas-pathway-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .visas-pathway-sub {
+    font-size: 0.88rem;
+    margin-bottom: 0.65rem;
+  }
+
+  /* Specialist Support */
+  .visas-support-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .visas-support-row {
+    grid-template-columns: 42px 1fr auto;
+    gap: 0.85rem;
+    padding: 1.5rem 0;
+  }
+
+  .visas-support-num {
+    font-size: 1.05rem;
+  }
+
+  .visas-support-info h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
+  }
+
+  .visas-support-info p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .visas-support-arrow svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .visas-support-decor {
+    width: 180px;
+    height: 135px;
+    opacity: 0.25;
+    right: -10px;
+    bottom: -15px;
+  }
+
+  /* Next Step */
+  .visas-nextstep-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .visas-nextstep-steps {
+    padding-top: 1.75rem;
+  }
+
+  .visas-nextstep-item {
+    grid-template-columns: 42px 1fr;
+    gap: 0.85rem;
+    padding: 1.35rem 0;
+  }
+
+  .visas-nextstep-num {
+    font-size: 1.05rem;
+  }
+
+  .visas-nextstep-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .visas-nextstep-info p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  /* FAQ */
+  .visas-faq-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .visas-faq-item {
+    padding: 1.35rem 0;
+  }
+
+  .visas-faq-question {
+    gap: 1rem;
+  }
+
+  .visas-faq-question h3 {
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .visas-faq-icon {
+    font-size: 1.6rem;
+  }
+
+  .visas-faq-answer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* CTA Banner */
+  .visas-cta-banner {
+    padding: 3.5rem 0;
+  }
+
+  .visas-cta-heading {
+    font-size: clamp(2rem, 7vw, 2.75rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-visas-cta-white {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .visas-cta-visual {
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 480px) {
+  .visas-hero {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .visas-hero-title {
+    font-size: clamp(1.95rem, 8.5vw, 2.45rem);
+    line-height: 1.15;
+  }
+
+  .visas-hero-desc {
+    font-size: 0.98rem;
+  }
+
+  .btn-visas-hero {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0.88rem 1.25rem;
+  }
+
+  .visas-usa-heading,
+  .visas-global-heading,
+  .visas-support-heading,
+  .visas-nextstep-heading,
+  .visas-faq-heading {
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
+  }
+
+  .visa-card-title {
+    font-size: 1.35rem;
+  }
+
+  .visas-pathway-card-inner {
+    gap: 1rem;
+  }
+
+  .visas-landmark-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .visas-pathway-title {
+    font-size: 1.15rem;
+  }
+
+  .visas-support-row {
+    grid-template-columns: 36px 1fr auto;
+    gap: 0.65rem;
+  }
+
+  .visas-nextstep-item {
+    grid-template-columns: 36px 1fr;
+    gap: 0.65rem;
+  }
+}
+
+/* ==========================================================================
+   GLOBAL BUSINESS ADVISORY PAGE - COMPLETE MOBILE & TABLET OPTIMIZATION
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* Business Hero */
+  .business-hero {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .business-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .business-hero-content {
+    max-width: 100%;
+  }
+
+  .business-hero-title {
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+  }
+
+  .business-hero-visual-wrap {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .business-hero-img {
+    max-width: 100%;
+  }
+
+  /* Company Setup Sections */
+  .business-destinations-section,
+  .business-destinations-more {
+    padding: 3rem 0 3.5rem 0;
+  }
+
+  .business-grid-2x2 {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+
+  .business-grid-2x2::before {
+    display: none;
+  }
+
+  .business-service-card {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  .business-service-card:last-child {
+    border-bottom: none;
+  }
+
+  /* Global Advisory 09—11 Section */
+  .business-advisory-section {
+    padding: 3.5rem 0 4.5rem 0;
+  }
+
+  .business-advisory-section .business-section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .business-advisory-row {
+    padding: 1.75rem 0;
+  }
+
+  .business-advisory-num {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: auto;
+  }
+
+  .business-advisory-divider {
+    height: 44px;
+  }
+
+  /* A Thoughtful Start (Process) */
+  .business-process-section {
+    padding: 3.5rem 0 4rem 0;
+  }
+
+  .business-process-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .business-process-visual {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .business-process-img {
+    max-width: 100%;
+  }
+
+  /* FAQ */
+  .business-faq-section {
+    padding: 3.5rem 0 4.5rem 0;
+  }
+
+  .business-faq-title {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Business Hero Mobile */
+  .business-hero {
+    padding: 1.5rem 0 2.75rem 0;
+  }
+
+  .business-hero-grid {
+    gap: 2.25rem;
+  }
+
+  .business-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.85rem;
+  }
+
+  .business-hero-title {
+    font-size: clamp(2.2rem, 7.5vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.25rem;
+  }
+
+  .business-hero-desc {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .btn-business-hero {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 0.95rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Section Titles & Descs */
+  .business-section-rule {
+    margin-bottom: 1.25rem;
+  }
+
+  .business-section-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.12;
+    margin-bottom: 1rem;
+  }
+
+  .business-section-desc {
+    font-size: 1.02rem;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  /* Company Setup Cards */
+  .business-destinations-section,
+  .business-destinations-more {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .business-service-card {
+    gap: 1.25rem;
+    padding: 1.25rem 0;
+    align-items: flex-start;
+  }
+
+  .business-card-icon-wrap {
+    width: 62px;
+    height: 62px;
+  }
+
+  .business-card-divider {
+    height: 52px;
+  }
+
+  .business-card-num {
+    font-size: 0.88rem;
+  }
+
+  .business-card-title {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 0.45rem;
+  }
+
+  .business-card-link {
+    font-size: 0.95rem;
+  }
+
+  /* Global Advisory 09—11 Section Mobile */
+  .business-advisory-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .business-advisory-section .business-section-title {
+    margin-bottom: 1.85rem;
+  }
+
+  .business-advisory-row {
+    padding: 1.25rem 0;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .business-advisory-left {
+    gap: 0.85rem;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .business-advisory-num {
+    font-size: 1.25rem;
+    font-weight: 800;
+    white-space: nowrap !important;
+    flex-shrink: 0;
+    min-width: auto;
+    letter-spacing: -0.01em;
+  }
+
+  .business-advisory-divider {
+    height: 38px;
+    flex-shrink: 0;
+  }
+
+  .business-advisory-text-wrap {
+    flex: 1;
+    gap: 0.2rem;
+    min-width: 0;
+  }
+
+  .business-advisory-heading {
+    font-size: 1.12rem;
+    line-height: 1.28;
+    letter-spacing: -0.015em;
+  }
+
+  .business-advisory-sub {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .business-advisory-arrow {
+    flex-shrink: 0;
+    padding-right: 0;
+  }
+
+  .business-advisory-arrow svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .business-advisory-arcs {
+    width: 180px;
+    height: 80px;
+    opacity: 0.25;
+  }
+
+  /* A Thoughtful Start (Process) Mobile */
+  .business-process-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .business-process-grid {
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .business-process-step {
+    gap: 1rem;
+    padding: 1.25rem 0;
+    align-items: flex-start;
+  }
+
+  .business-step-icon-wrap {
+    width: 48px;
+    height: 48px;
+  }
+
+  .business-step-divider {
+    height: 48px;
+  }
+
+  .business-step-num {
+    font-size: 0.88rem;
+  }
+
+  .business-step-title {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 0.35rem;
+  }
+
+  .business-step-desc {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  /* FAQ Mobile */
+  .business-faq-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .business-faq-title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    margin-bottom: 1.85rem;
+  }
+
+  .business-faq-question {
+    padding: 1.15rem 0;
+    gap: 0.75rem;
+  }
+
+  .business-faq-left {
+    gap: 0.75rem;
+  }
+
+  .business-faq-icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+
+  .business-faq-divider {
+    height: 28px;
+  }
+
+  .business-faq-question h3 {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .business-faq-chevron svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .business-faq-answer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-hero {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .business-hero-title {
+    font-size: clamp(1.95rem, 8.5vw, 2.45rem);
+    line-height: 1.15;
+  }
+
+  .business-hero-desc {
+    font-size: 0.98rem;
+  }
+
+  .btn-business-hero {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0.88rem 1.25rem;
+  }
+
+  .business-section-title,
+  .business-faq-title {
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
+  }
+
+  .business-service-card {
+    gap: 0.85rem;
+  }
+
+  .business-card-icon-wrap {
+    width: 50px;
+    height: 50px;
+  }
+
+  .business-card-divider {
+    height: 42px;
+  }
+
+  .business-card-title {
+    font-size: 1.15rem;
+  }
+
+  .business-advisory-row {
+    padding: 1.1rem 0;
+  }
+
+  .business-advisory-left {
+    gap: 0.65rem;
+  }
+
+  .business-advisory-num {
+    font-size: 1.15rem;
+  }
+
+  .business-advisory-divider {
+    height: 32px;
+  }
+
+  .business-advisory-heading {
+    font-size: 1.02rem;
+  }
+
+  .business-process-step {
+    gap: 0.85rem;
+  }
+
+  .business-step-icon-wrap {
+    width: 42px;
+    height: 42px;
+  }
+
+  .business-step-divider {
+    height: 42px;
+  }
+
+  .business-step-title {
+    font-size: 1.08rem;
   }
 }

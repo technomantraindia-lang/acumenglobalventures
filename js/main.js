@@ -40,25 +40,48 @@ function initMobileDrawer() {
 
   if (!toggleBtn || !drawer || !overlay) return;
 
-  function openDrawer() {
+  function openDrawer(e) {
+    if (e) e.preventDefault();
     drawer.classList.add('active');
     overlay.classList.add('active');
+    toggleBtn.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
     drawer.classList.remove('active');
     overlay.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
 
+  toggleBtn.setAttribute('aria-expanded', 'false');
   toggleBtn.addEventListener('click', openDrawer);
   if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
   overlay.addEventListener('click', closeDrawer);
 
-  const links = drawer.querySelectorAll('.mobile-nav-link');
-  links.forEach(link => {
-    link.addEventListener('click', closeDrawer);
+  // Close drawer on any interactive element click inside drawer
+  const drawerInteractive = drawer.querySelectorAll('.mobile-nav-link, a, button');
+  drawerInteractive.forEach(item => {
+    item.addEventListener('click', () => {
+      if (item !== closeBtn) {
+        closeDrawer();
+      }
+    });
+  });
+
+  // Close drawer on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('active')) {
+      closeDrawer();
+    }
+  });
+
+  // Auto-close on resize to desktop (> 991px)
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 991 && drawer.classList.contains('active')) {
+      closeDrawer();
+    }
   });
 }
 
